@@ -57,6 +57,34 @@ headerText.textContent = siteContent["cta"]["h1"];
 let buttonText = document.querySelector("button");
 buttonText.textContent = siteContent["cta"]["button"];
 
+let featuresTitle = document.querySelector(".top-content .text-content h4");
+featuresTitle.textContent = siteContent["main-content"]["features-h4"];
+
+let featuresP = document.querySelector(".top-content .text-content p");
+featuresP.textContent = siteContent["main-content"]["features-content"];
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+let servicesTitle = document.querySelector(".bottom-content .text-content h4");
+servicesTitle.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesP = document.querySelector(".bottom-content .text-content p");
+servicesP.textContent = siteContent["main-content"]["services-content"];
+
+let contactTitle = document.querySelector(".contact h4");
+contactTitle.textContent = siteContent["contact"]["contact-h4"];
+
+let contactP = document.querySelectorAll(".contact p");
+
+Array.from(contactP).forEach(p => {
+  p.textContent = "Paragraph";
+});
+
+let footerP = document.querySelector("footer");
+footerP.textContent = siteContent["footer"]["copyright"];
+
+
 
 
 
