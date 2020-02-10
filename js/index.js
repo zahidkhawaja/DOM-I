@@ -142,6 +142,8 @@ emailP.textContent = siteContent["contact"]["email"];
 
 let footerP = document.querySelector("footer");
 footerP.textContent = siteContent["footer"]["copyright"];
+footerP.style.color = "purple";
+footerP.style.fontWeight = "600";
 
 
 
